@@ -22,6 +22,7 @@ html, body {
     padding: 0px;
     margin: 0px;
     font-family: roboto-light;
+    font-size: 1em;
 }
 
 h1, h2, h3 {
@@ -40,8 +41,8 @@ h1, h2, h3 {
     top: 50%;
     margin-top: -50px;
     font-family: title;
-    font-size: 100px;
-    color: #bb585a;
+    font-size: 10em;
+    color: black;
     text-align: center;
 }
 
@@ -91,5 +92,6 @@ h1, h2, h3 {
 .mockup {
     height: auto;
     width: 300px;
+    max-width: 40vh;
     margin: 20px;
 }
