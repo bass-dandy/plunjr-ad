@@ -21,12 +21,29 @@
 html, body {
     padding: 0px;
     margin: 0px;
-    font-family: roboto-light;
-    font-size: 1em;
 }
 
 h1, h2, h3 {
     font-family: roboto-thin;
+}
+
+p {
+    font-family: roboto-light;
+    font-size: 1em;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#gradient {
+    position: absolute;
+    text-align: center;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: 1;
+    background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4), rgb(255,255,255));
 }
 
 #map {
@@ -36,10 +53,12 @@ h1, h2, h3 {
     background-size: cover;
 }
 
-.title {
+#title {
     position: absolute;
     top: 50%;
-    margin-top: -50px;
+    margin-top: -0.5em;
+    left: 0;
+    right: 0;
     font-family: title;
     font-size: 10em;
     color: black;
@@ -74,6 +93,7 @@ h1, h2, h3 {
 .section {
     width: 100%;
     height: 100vh;
+    padding-top: 10px;
 }
 
 .red {
