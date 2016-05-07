@@ -1,0 +1,95 @@
+@font-face {
+    font-family: title;
+    src: url(fonts/GeosansLight.ttf);
+}
+
+@font-face {
+    font-family: roboto-thin;
+    src: url(fonts/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: roboto-Light;
+    src: url(fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+    font-family: roboto-light;
+}
+
+h1, h2, h3 {
+    font-family: roboto-thin;
+}
+
+#map {
+    background-image: url("images/map.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    font-family: title;
+    font-size: 100px;
+    color: #bb585a;
+    text-align: center;
+}
+
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.parallax_layer {
+    width:auto;
+    height:auto;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.parallax_front {
+    transform: translateZ(0);
+}
+
+.parallax_back {
+    width: 100%;
+    height: 100%;
+    transform: translateZ(-1px) scale(2);
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+}
+
+.red {
+    background-color: #ec7d7f;
+}
+
+.white {
+    background-color: white;
+}
+
+.center {
+    width: 100%;
+    text-align: center;
+}
+
+.mockup {
+    height: auto;
+    width: 300px;
+    margin: 20px;
+}
